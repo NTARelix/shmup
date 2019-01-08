@@ -7,5 +7,5 @@ const game = new Phaser.Game({
   height: 600,
 })
 
-game.scene.add(PlayScene.key, new PlayScene())
-game.scene.start(PlayScene.key)
+game.scene.add(PlayScene.Key, new PlayScene())
+game.scene.start(PlayScene.Key)
