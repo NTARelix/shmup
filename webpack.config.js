@@ -10,6 +10,11 @@ module.exports = (env, { mode }) => ({
         include: path.resolve(__dirname, 'src'),
         use: 'babel-loader',
       },
+      {
+        test: /\.png$/,
+        include: path.resolve(__dirname, 'src'),
+        use: 'file-loader',
+      },
     ],
   },
   plugins: [new HtmlWebpackPlugin()]
